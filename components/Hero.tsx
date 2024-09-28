@@ -2,7 +2,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
@@ -42,8 +41,8 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+          <p className="uppercase tracking-widest text-xs text-center text-neutral-500  max-w-80">
+           Creative & Passionate designer
           </p>
 
           {/**
@@ -51,18 +50,16 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
-          <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
-
+        <h1 className="relative z-8 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">  
+          Building Great Product Experience Is My Hobby
+          </h1>  
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+            Hi! I&apos;m John, a Web dev Js Developer based in Philipines.
           </p>
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="View my work"
               icon={<FaLocationArrow />}
               position="right"
             />

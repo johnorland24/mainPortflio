@@ -16,17 +16,15 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
-        <a href="mailto:contact@jsmastery.pro">
+         <h1 className="relative z-10 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">  
+            Thanks For Viewing I&apos;m Exited to meet You  
+          </h1>  
+       <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">  
+            "Ready to unleash some creative magic together? Drop me a line! Whether it’s a brilliant project idea, a collaboration, or just a virtual high-five, I’m all ears (and pixels). Let’s get in touch and make some digital dreams come true—no smoke signals or carrier pigeons required!"  
+          </p>  
+        <a href="mailto:johnorlandsudoy49@gmail.com">
           <MagicButton
-            title="Let's get in touch"
+            title="Email"
             icon={<FaLocationArrow />}
             position="right"
           />
@@ -34,17 +32,19 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 John Orland 
+            Copyright © 2024 John Orland Sudoy 
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
+            <a href={info.url} key={info.id}> 
             <div
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
               <img src={info.img} alt="icons" width={20} height={20} />
             </div>
+           </a>  
           ))}
         </div>
       </div>

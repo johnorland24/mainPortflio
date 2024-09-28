@@ -11,6 +11,8 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
+
 
 export const BentoGrid = ({
   className,
@@ -52,8 +54,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Javascript","ReactJS"];
+  const rightLists = ["php", "laravel"];
 
   const [copied, setCopied] = useState(false);
 
@@ -131,11 +133,19 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 mb-10`}
           >
             {title}
           </div>
-
+                {id === 5 && (
+           <a href="https://github.com/johnorland24/capstones">
+            <MagicButton
+              title="check my github"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
+                )}
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
 
@@ -183,13 +193,13 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <MagicButton
+              {/* <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
-              />
+              /> */}
             </div>
           )}
         </div>
