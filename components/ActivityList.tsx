@@ -59,7 +59,7 @@ export const projects = [
     },  
     {
         title: "Shopping cart",
-        description: "This is my first project in React I created a shopping cart using React and Redux.",
+        description: "This is my first project in javascript with html and css",
         link: "https://johnorland24.github.io/ShoppingCart/"
     }
 ];
