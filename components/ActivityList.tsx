@@ -57,4 +57,9 @@ export const projects = [
         description: "This is my last project in Bootstrap I created a portfolio to familiarize myself with my skills in Bootstrap.",  
         link: "https://johnorland24.github.io/updatedportfoliobootstrap/",  
     },  
+    {
+        title: "Shopping cart",
+        description: "This is my first project in React I created a shopping cart using React and Redux.",
+        link: "https://johnorland24.github.io/ShoppingCart/"
+    }
 ];
