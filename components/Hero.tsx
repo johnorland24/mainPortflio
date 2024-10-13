@@ -42,7 +42,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-neutral-500  max-w-80">
-           Creative & Passionate designer
+            Creative & Passionate developer
           </p>
 
           {/**
@@ -50,13 +50,10 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
-        <h1 className="relative z-8 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">  
-          Building Great Product Experience Is My Hobby
-          </h1>  
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m John, a Web dev Js Developer based in Philipines.
-          </p>
-
+          <h1 className="relative z-8 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">
+            Hi I'm John Orland Sudoy <br />
+            Welcome to my Portfolio
+          </h1>
           <a href="#about">
             <MagicButton
               title="View my work"
