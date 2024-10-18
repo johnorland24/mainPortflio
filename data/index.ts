@@ -107,6 +107,15 @@ export const projects = [
     link: "https://github.com/johnorland24/quizGame",
     url: "https://quiz-game-black-five.vercel.app/",
   },
+  {
+    id: 5,
+    title: "3D portfolio",
+    des: "These Project is built in react js and three.js",
+    img: "/3d.png",
+    iconLists: ["/tail.svg", "/js.svg", "/threejs-1.svg"],
+    link: "https://github.com/johnorland24/3D_portfolio",
+    url: "https://3-d-portfolio-eta-seven.vercel.app/",
+  },
 ];
 
 export const testimonials = [
